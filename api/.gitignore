@@ -1,0 +1,6 @@
+.env
+node_modules/
+npm-debug.log*
+mysql-local.ini
+mysql-local.*.log
+api-local.*.log

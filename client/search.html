@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search Community Hope Australia fundraising events by date, suburb or category.">
+  <title>Search events | Community Hope Australia</title><link rel="stylesheet" href="css/style.css">
+  <script src="js/search.js" defer></script><script src="js/motion.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html">Community <span>Hope</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a aria-current="page" href="search.html">Search Events</a></nav></header>
+  <main class="page-main"><section class="page-heading"><p class="eyebrow"><span class="eyebrow-dot"></span> Find your people</p><h1>Make a little time<br><em>mean a lot.</em></h1><p>Choose a date, place or cause. There’s a good thing waiting for you.</p></section>
+    <section class="search-panel" aria-label="Event search"><div class="search-panel-heading"><span class="search-panel-icon">⌕</span><div><strong>Find your kind of good</strong><small>Pick one or more filters to get started.</small></div></div><form id="search-form">
+      <div class="form-field"><label for="date-display">Event date</label><div class="date-picker"><div class="date-input-wrap"><input type="text" id="date-display" inputmode="numeric" autocomplete="off" placeholder="DD / MM / YYYY" aria-label="Event date in day, month, year format"><input type="hidden" id="date" name="date"><button class="calendar-toggle" type="button" aria-label="Open calendar" aria-expanded="false" aria-controls="date-calendar">▦</button></div><div class="date-calendar" id="date-calendar" hidden><div class="calendar-heading"><button type="button" data-month-step="-1" aria-label="Previous month">‹</button><strong id="calendar-month-label"></strong><button type="button" data-month-step="1" aria-label="Next month">›</button></div><div class="calendar-weekdays" aria-hidden="true"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div><div class="calendar-days" id="calendar-days" role="grid" aria-label="Choose a date"></div><div class="calendar-footer"><button type="button" id="calendar-clear">Clear date</button><span>Dates shown in Australian format</span></div></div></div></div>
+      <div class="form-field"><label for="location_suburb">Suburb</label><input type="text" id="location_suburb" name="location_suburb" placeholder="e.g. South Brisbane"></div>
+      <div class="form-field"><label for="category_id">Category</label><select id="category_id" name="category_id"><option value="">All Categories</option></select></div>
+      <div class="form-actions"><button class="button" type="submit">Search Events <span aria-hidden="true">→</span></button><button class="button button-light" type="reset" id="clear-button">Clear Filters</button></div>
+    </form><div class="quick-categories"><span>Quick explore</span><div id="category-chips" class="chip-list" aria-label="Quick category filters"></div></div></section>
+    <section class="search-results" aria-labelledby="results-title"><div class="section-heading"><div><p class="eyebrow">Explore together</p><h2 id="results-title">Community events</h2></div><span id="result-count" class="result-count"></span></div><p id="search-message" class="message" role="status" aria-live="polite"></p><div id="search-results-list" class="event-grid"></div></section>
+  </main><footer><span>© Community Hope Australia</span><span>Give back, join an event, change lives.</span></footer>
+</body></html>
